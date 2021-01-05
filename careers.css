@@ -1,0 +1,46 @@
+* {
+  background-color: black;
+  color: white;
+  margin: 0;
+  margin-right: 6px;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+a {
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.nav-title {
+  font-size: 50px;
+  text-decoration-line: none;
+}
+
+.title {
+  margin-left: 30px;
+  margin-top: 50px;
+  font-size: 40px;
+}
+
+.content{
+  margin-left: 40px;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+h5 {
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
