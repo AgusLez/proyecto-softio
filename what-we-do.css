@@ -1,3 +1,5 @@
+@import "./fonts.css";
+
 * {
   background-color: black;
   color: white;
@@ -15,37 +17,45 @@ nav {
 .nav-container {
   display: flex;
   justify-content: space-between;
-  width: 210px;
+  width: 220px;
 }
 
-.algo {
-  font-size: 15px;
+a {
+  font-size: 13px;
   text-decoration: none;
+  font-family: "MADE Outer Sans Light";
 }
 
 .nav-title {
-  font-size: 50px;
+  font-size: 35px;
   text-decoration-line: none;
+  font-family: "MADE Outer Sans Bold";
 }
 
 h1 {
+  position: relative;
   font-size: 120px;
+  right: 1.6%;
 }
 
 .vertical-text-rl {
   writing-mode: vertical-rl;
   font-size: 12px;
+  font-family: "MADE Outer Sans Light";
+  letter-spacing: 1px;
 }
 
 .title{
   display: flex;
   justify-content: space-between;
+  font-family: "MADE Outer Sans Bold";
 }
 
 .description{
   margin-top: 15px;
-  padding-left: 110px;
+  padding-left: 90px;
   font-size: 25px;
+  font-family: "MADE Outer Sans Light";
 }
 
 .content{
@@ -56,13 +66,20 @@ h1 {
 
 ul {
   list-style-type: none;
-  font-size: 35px;
-  padding-right: 210px;
+  font-size: 30px;
+  padding-right: 400px;
+  font-family: "MADE Outer Sans Outline Bold";
+}
+
+.products {
+  letter-spacing: 5px;
 }
 
 .vertical-text-lr {
   margin-left: 15px;
-  padding-top: 50px;
   font-size: 12px;
+  letter-spacing: 1px;
   writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-family: "MADE Outer Sans Light";
 }

@@ -1,8 +1,9 @@
+@import "./fonts.css";
+
 * {
   background-color: black;
   color: white;
   margin: 0;
-  margin-right: 6px;
   padding: 0;
 }
 
@@ -15,32 +16,64 @@ nav {
 .nav-container {
   display: flex;
   justify-content: space-between;
-  width: 200px;
+  width: 220px;
 }
 
 a {
-  font-size: 15px;
+  font-size: 13px;
   text-decoration: none;
+  font-family: "MADE Outer Sans Light";
 }
 
 .nav-title {
-  font-size: 50px;
+  font-size: 35px;
   text-decoration-line: none;
+  font-family: "MADE Outer Sans Bold";
 }
 
 .title {
-  margin-left: 30px;
   margin-top: 50px;
-  font-size: 40px;
+  font-size: 50px;
+  font-family: "MADE Outer Sans Bold";
 }
 
 .content{
-  margin-left: 40px;
-  margin-top: 30px;
-  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
-h5 {
+.title-container{
+
+  margin-left: 30px;
+  margin-top: 50px;
+  font-size: 20px;
+  font-family: "MADE Outer Sans Light"
+}
+
+.jobs-container{
+  margin-top: 30px;
+  margin-left: 10px;
+  letter-spacing: 5px;
+}
+
+p{
+  height: 20px;
+}
+
+.link {
   text-decoration: underline;
   margin-bottom: 30px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 25px;
+}
+
+i{
+  font-size: 25px;
+  padding: 10px 0;
 }

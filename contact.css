@@ -1,3 +1,5 @@
+@import "./fonts.css";
+
 * {
   background-color: black;
   color: white;
@@ -15,28 +17,37 @@ nav {
 .nav-container {
   display: flex;
   justify-content: space-between;
-  width: 220px;
+  width: 270px;
 }
 
 a {
-  font-size: 15px;
+  font-size: 13px;
   text-decoration: none;
+  font-family: "MADE Outer Sans Light";
 }
 
 .nav-title {
-  font-size: 50px;
+  font-size: 35px;
   text-decoration-line: none;
+  font-family: "MADE Outer Sans Bold";
 }
 
 .content{
-  margin-top: 350px;
+  margin-top: 300px;
   margin-left: 30px;
+  font-family: "MADE Outer Sans Light";
 }
 
 h1{
-  font-size: 60px;
+  font-size: 80px;
+  font-family: "MADE Outer Sans Bold";
 }
 
-h3{
-  font-size: 20px;
+span {
+  text-decoration-line: underline;
+}
+
+.contact {
+  font-size: 25px;
+  letter-spacing: 7px;
 }
