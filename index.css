@@ -1,65 +1,95 @@
 @import "./fonts.css";
 
+body {
+  --text-color: rgb(0, 0, 0);
+  --bkg-color: #fff;
+}
+body.dark-theme {
+  --text-color: #eee;
+  --bkg-color: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* defaults to dark theme */
+  body {
+    --text-color: #eee;
+    --bkg-color: #000000;
+  }
+  body.light-theme {
+    --text-color: rgb(0, 0, 0);
+    --bkg-color: #fff;
+  }
+}
+
 * {
-  background-color: black;
-  color: white;
+  background-color: var(--bkg-color);
+  color: var(--text-color);
   margin: 0;
   padding: 0;
   overflow: hidden
 }
 
+
 nav {
+  margin: 25px; 
   display: flex;
   justify-content: space-between;
-  margin: 25px; 
   min-height: 10vh
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
-  width: 220px;
+  width: 280px;
 }
 
 a {
+  font-family: "MADE Outer Sans Light";
   font-size: 13px;
   text-decoration: none;
-  font-family: "MADE Outer Sans Light";
+}
+
+.btn-toggle {
+  border: none;
+  display: flex;
+  align-items: flex-start;
+  outline: none;
 }
 
 .nav-title {
+  font-family: "MADE Outer Sans Bold";
   font-size: 35px;
   text-decoration-line: none;
-  font-family: "MADE Outer Sans Bold";
 }
 
 .title-container{
   display: flex;
+  justify-content: flex-end;
   flex-direction: column;
   line-height: 121px;
-  justify-content: flex-end;
   position: relative;
-  bottom: 38px;
+  bottom: 45px;
   left: -17px
 }
 
 .title {
-  font-size: 150px;
+  font-size: 170px;
+  letter-spacing: -11px;
   font-family: "MADE Outer Sans Bold";
 }
 
 .content{
   display: flex;
+  justify-content: space-between;
   align-items: stretch;
   min-height: 90vh;
-  justify-content: space-between;
 }
 
 ul {
-  list-style-type: none;
+  margin-right: 25px;
   display: flex;
   flex-direction: column;
-  margin-right: 25px;
+  list-style-type: none;
 }
 
 .links-container {
@@ -67,6 +97,10 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+.fa-adjust {
+  padding: 0;
 }
 
 i{
@@ -83,4 +117,5 @@ i{
   position: relative;
   bottom: 20px;
   font-family: "MADE Outer Sans Light";
+  letter-spacing: 2px;
 }
