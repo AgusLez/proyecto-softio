@@ -4,21 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="themes.css">
+  <link rel="stylesheet" href="mobile-nav.css">
   <title>Softio</title>
 </head>
 
 <body>
   <nav>
-    <p><a class="nav-title" href="index.html">softio</a></p>
+    <h4><a class="logo" href="index.html">softio</a></h4>
 
-    <div class="nav-container">
-      <a href="what-we-do.html">What we do</a>
-      <a href="careers.html">Careers</a>
-      <a href="contact.html">Contact</a>
-      <button class="btn-toggle"><i class="fas fa-adjust"></i></button>
+    <div class="nav-links">
+      <ul class="links">
+        <li><a href="what-we-do.html">What we do</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      
+      <button class="btn-toggle"><i class="fas fa-adjust"></i></button></li> 
     </div>
+
+    <div class="burger"><i class="fas fa-bars"></i></div>
   </nav>
 
   <div class="content">
@@ -28,7 +35,7 @@
       <span class="title">CODE</span>
     </h1>
 
-    <div class="links-container">
+    <div class="social-links">
       <ul>
         <li><a alt="Instagram"><i class="fab fa-instagram"></i></a></li>
         <li><a alt="Twitter"><i class="fab fa-twitter"></i></a></li>
@@ -38,7 +45,8 @@
       <span class="address">AVENIDA DORREGO 1647, CABA, ARGENTINA / HI@SOFTIO.DEV</span>
     </div>
   </div>
-  <script type="text/javascript" src="toggle.js"></script>
+  <script type="text/javascript" src="themes.js"></script>
+  <script type="text/javascript" src="mobile-nav.js"></script>
 </body>
 
 </html>

@@ -1,62 +1,34 @@
 @import "./fonts.css";
 
-body {
-  --text-color: rgb(0, 0, 0);
-  --bkg-color: #fff;
-}
-body.dark-theme {
-  --text-color: #eee;
-  --bkg-color: #000000;
-}
-
-@media (prefers-color-scheme: dark) {
-  /* defaults to dark theme */
-  body {
-    --text-color: #eee;
-    --bkg-color: #000000;
-  }
-  body.light-theme {
-    --text-color: rgb(0, 0, 0);
-    --bkg-color: #fff;
-  }
-}
-
 * {
-  background-color: var(--bkg-color);
-  color: var(--text-color);
-  margin: 0;
-  padding: 0;
   overflow: hidden
 }
 
-
 nav {
-  margin: 25px; 
   display: flex;
   justify-content: space-between;
+  align-items: center;
   min-height: 10vh
 }
 
-.nav-container {
+.nav-links {
   display: flex;
   justify-content: space-between;
-  width: 280px;
 }
 
-a {
+.links {
+  display: flex;
+}
+
+.nav-links a{
   font-family: "MADE Outer Sans Light";
   font-size: 13px;
   text-decoration: none;
+  padding: 0 20px 0 0;
 }
 
-.btn-toggle {
-  border: none;
-  display: flex;
-  align-items: flex-start;
-  outline: none;
-}
-
-.nav-title {
+.logo {
+  padding-left: 25px;
   font-family: "MADE Outer Sans Bold";
   font-size: 35px;
   text-decoration-line: none;
@@ -68,7 +40,7 @@ a {
   flex-direction: column;
   line-height: 121px;
   position: relative;
-  bottom: 45px;
+  bottom: 0px;
   left: -17px
 }
 
@@ -76,6 +48,7 @@ a {
   font-size: 170px;
   letter-spacing: -11px;
   font-family: "MADE Outer Sans Bold";
+  padding-right: 20px;
 }
 
 .content{
@@ -85,25 +58,21 @@ a {
   min-height: 90vh;
 }
 
-ul {
-  margin-right: 25px;
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-}
-
-.links-container {
+.social-links {
   margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.fa-adjust {
-  padding: 0;
+.social-links ul{
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
 }
 
-i{
+.social-links i{
   font-size: 25px;
   padding: 10px 0;
 }
@@ -112,9 +81,7 @@ i{
   margin-top: 200px;
   margin-right: 25px;
   margin-bottom: 20px;
-  align-items: baseline;
   font-size: 10px;
-  position: relative;
   bottom: 20px;
   font-family: "MADE Outer Sans Light";
   letter-spacing: 2px;

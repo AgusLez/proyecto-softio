@@ -1,34 +1,47 @@
 @import "./fonts.css";
 
 * {
-  background-color: black;
-  color: white;
-  margin: 0;
-  padding: 0;
+  overflow: hidden
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  margin: 25px;
+  align-items: center;
+  min-height: 10vh
 }
 
-.nav-container {
+.nav-links {
   display: flex;
   justify-content: space-between;
-  width: 270px;
 }
 
-a {
+.links {
+  display: flex;
+}
+
+.nav-links a{
+  font-family: "MADE Outer Sans Light";
   font-size: 13px;
   text-decoration: none;
-  font-family: "MADE Outer Sans Light";
+  padding: 0 20px 0 0;
 }
 
-.nav-title {
+.links li{
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  padding-left: 25px;
+  font-family: "MADE Outer Sans Bold";
   font-size: 35px;
   text-decoration-line: none;
-  font-family: "MADE Outer Sans Bold";
+}
+
+i{
+  font-size: 25px;
+  padding: 10px 0;
 }
 
 .content{
