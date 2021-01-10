@@ -8,12 +8,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 10vh
+  min-height: 10vh;
 }
 
 .nav-links {
   display: flex;
   justify-content: space-between;
+  margin-top: 3%;
 }
 
 .links {
@@ -25,6 +26,12 @@ nav {
   font-size: 13px;
   text-decoration: none;
   padding: 0 20px 0 0;
+}
+
+#logo {
+  z-index: 3;
+  margin-top: 44px;
+  margin-left: -20px; 
 }
 
 .logo {
@@ -40,7 +47,7 @@ nav {
   flex-direction: column;
   line-height: 121px;
   position: relative;
-  bottom: 0px;
+  bottom: 20px;
   left: -17px
 }
 
@@ -58,14 +65,14 @@ nav {
   min-height: 90vh;
 }
 
-.social-links {
+.contact-container {
   margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.social-links ul{
+.social-links {
   margin-right: 25px;
   display: flex;
   flex-direction: column;
@@ -75,6 +82,7 @@ nav {
 .social-links i{
   font-size: 25px;
   padding: 10px 0;
+  cursor: pointer;
 }
 
 .address {
@@ -86,3 +94,39 @@ nav {
   font-family: "MADE Outer Sans Light";
   letter-spacing: 2px;
 }
+
+@media screen and (max-width: 768px) {
+  .burger{
+    top: 56px;
+    }
+
+  .title {
+    font-size: 115px;
+    line-height: 85px;
+    letter-spacing: -8px;
+  }
+
+  .title-container {
+    position: relative;
+    bottom: 22px;
+    left: -16px;
+    min-width: 105%;
+  }
+}
+
+@media screen and (max-width: 936px) {
+  .social-links {
+    display: none;
+  }
+
+  .address {
+    writing-mode: vertical-rl;
+    margin-top: 0;
+    position: fixed;
+    font-size: 6px;
+    margin-right: 45px;
+    margin-bottom: 189px;
+    transform: rotate(180deg);
+  }
+}
+

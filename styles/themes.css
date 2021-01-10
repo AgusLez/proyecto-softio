@@ -32,5 +32,6 @@ body.light-theme {
   outline: none;
   margin-right: 25px;
   font-size: 25px;
+  cursor: pointer;
 }
 

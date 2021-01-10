@@ -8,12 +8,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 10vh
+  min-height: 10vh;
 }
 
 .nav-links {
   display: flex;
   justify-content: space-between;
+  margin-top: 3%;
 }
 
 .links {
@@ -27,9 +28,10 @@ nav {
   padding: 0 20px 0 0;
 }
 
-.links li{
-  display: flex;
-  align-items: center;
+#logo {
+  z-index: 3;
+  margin-top: 44px;
+  margin-left: -20px; 
 }
 
 .logo {
@@ -64,3 +66,9 @@ span {
   letter-spacing: 7px;
 }
 
+@media screen and (max-width: 768px)
+{
+  .burger{
+  top: 45px;
+  }
+}

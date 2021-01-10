@@ -8,16 +8,21 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 10vh
+  min-height: 10vh;
 }
 
 .nav-links {
   display: flex;
   justify-content: space-between;
+  margin-top: 3%;
 }
 
 .links {
   display: flex;
+}
+
+.home {
+  display: none;
 }
 
 .nav-links a{
@@ -27,9 +32,10 @@ nav {
   padding: 0 20px 0 0;
 }
 
-.links li{
-  display: flex;
-  align-items: center;
+#logo {
+  z-index: 3;
+  margin-top: 44px;
+  margin-left: -20px; 
 }
 
 .logo {
@@ -53,7 +59,7 @@ h1 {
   margin-right: 17px;
 }
 
-.title{
+.title-container {
   display: flex;
   justify-content: space-between;
   font-family: "MADE Outer Sans Bold";
@@ -96,3 +102,32 @@ i{
   transform: rotate(180deg);
   font-family: "MADE Outer Sans Light";
 }
+
+@media screen and (max-width: 768px)
+{
+  .burger{
+  top: 45px;
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+h1 {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 5px;
+  }
+
+  .products {
+    font-size: 5px;
+  }
+
+  .vertical-text-lr {
+    display: none;
+  }
+
+  .vertical-text-rl {
+    display: none;
+  }
+} */
