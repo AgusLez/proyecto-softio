@@ -1,44 +1,8 @@
-@import "./fonts.css";
+@import "./general/fonts.css";
 
 * {
-  overflow: hidden
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 10vh;
-}
-
-.nav-links {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 3%;
-}
-
-.links {
-  display: flex;
-}
-
-.nav-links a{
-  font-family: "MADE Outer Sans Light";
-  font-size: 13px;
-  text-decoration: none;
-  padding: 0 20px 0 0;
-}
-
-#logo {
-  z-index: 3;
-  margin-top: 44px;
-  margin-left: -20px; 
-}
-
-.logo {
-  padding-left: 25px;
-  font-family: "MADE Outer Sans Bold";
-  font-size: 35px;
-  text-decoration-line: none;
+  overflow: hidden;
+  transition: all 0.5s;
 }
 
 .title-container{
@@ -47,7 +11,7 @@ nav {
   flex-direction: column;
   line-height: 121px;
   position: relative;
-  bottom: 20px;
+  bottom: 0px;
   left: -17px
 }
 
@@ -96,9 +60,6 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-  .burger{
-    top: 56px;
-    }
 
   .title {
     font-size: 115px;
@@ -108,7 +69,7 @@ nav {
 
   .title-container {
     position: relative;
-    bottom: 22px;
+    bottom: 0;
     left: -16px;
     min-width: 105%;
   }
@@ -124,9 +85,9 @@ nav {
     margin-top: 0;
     position: fixed;
     font-size: 6px;
-    margin-right: 45px;
-    margin-bottom: 189px;
+    margin-right: 40px;
+    margin-bottom: 50%;
     transform: rotate(180deg);
   }
-}
+} 
 

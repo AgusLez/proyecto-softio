@@ -1,75 +1,35 @@
-@import "./fonts.css";
+@import "./general/fonts.css";
 
 * {
-  overflow: hidden
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 10vh;
-}
-
-.nav-links {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 3%;
-}
-
-.links {
-  display: flex;
-}
-
-.home {
-  display: none;
-}
-
-.nav-links a{
-  font-family: "MADE Outer Sans Light";
-  font-size: 13px;
-  text-decoration: none;
-  padding: 0 20px 0 0;
-}
-
-#logo {
-  z-index: 3;
-  margin-top: 44px;
-  margin-left: -20px; 
-}
-
-.logo {
-  padding-left: 25px;
-  font-family: "MADE Outer Sans Bold";
-  font-size: 35px;
-  text-decoration-line: none;
+  overflow: hidden;
+  transition: all 0.5s;
 }
 
 h1 {
-  position: relative;
   font-size: 120px;
+  position: relative;
   right: 1.6%;
 }
 
 .vertical-text-rl {
-  writing-mode: vertical-rl;
-  font-size: 12px;
   font-family: "MADE Outer Sans Light";
+  font-size: 12px;
   letter-spacing: 1px;
-  margin-right: 17px;
+  writing-mode: vertical-rl;
+  margin: 20px 25px 0 0;
 }
 
 .title-container {
+  font-family: "MADE Outer Sans Bold";
   display: flex;
   justify-content: space-between;
-  font-family: "MADE Outer Sans Bold";
 }
 
 .description{
-  margin-top: 15px;
-  padding-left: 90px;
-  font-size: 25px;
   font-family: "MADE Outer Sans Light";
+  font-size: 25px;
+  padding-left: 90px;
+  margin-top: 15px;
 }
 
 .products-container{
@@ -78,16 +38,11 @@ h1 {
   margin-top: 30px;
 }
 
-i{
-  font-size: 25px;
-  padding: 10px 0;
-}
-
 .products-container ul {
-  list-style-type: none;
-  font-size: 30px;
-  padding-right: 400px;
   font-family: "MADE Outer Sans Outline Bold";
+  font-size: 30px;
+  list-style-type: none;
+  padding-right: 400px;
 }
 
 .products {
@@ -95,39 +50,45 @@ i{
 }
 
 .vertical-text-lr {
-  margin-left: 15px;
+  font-family: "MADE Outer Sans Light";
   font-size: 12px;
   letter-spacing: 1px;
   writing-mode: vertical-lr;
+  margin-left: 25px;
   transform: rotate(180deg);
-  font-family: "MADE Outer Sans Light";
 }
 
-@media screen and (max-width: 768px)
-{
-  .burger{
-  top: 45px;
+
+@media screen and (max-width: 768px) {
+ .content {
+   display: flex;
+   flex-direction: column;
+   width: 120%;
+   margin-top: 60px; 
   }
+
+ h1 { 
+   font-size: 43px;
+ }
+
+ .vertical-text-rl {
+   display: none;
+ }
+
+ .vertical-text-lr {
+  display: none;
 }
+ .description {
+   font-size: 10px;
+   padding-left: 20px;
+   margin-top: 67px;
+ }
 
-/* @media screen and (max-width: 768px) {
-h1 {
-    font-size: 20px;
-  }
-
-  .description {
-    font-size: 5px;
-  }
-
-  .products {
-    font-size: 5px;
-  }
-
-  .vertical-text-lr {
-    display: none;
-  }
-
-  .vertical-text-rl {
-    display: none;
-  }
-} */
+ .products-container ul {
+  font-size: 12px;
+  list-style-type: none;
+  line-height: 40px;
+  padding-right: 24px;
+  padding-left: 20px;
+ }
+} 
