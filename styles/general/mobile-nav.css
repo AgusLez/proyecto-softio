@@ -43,7 +43,7 @@ nav {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 
   nav {
     justify-content: space-between;
@@ -106,8 +106,8 @@ nav {
   .burger {
     display: block;
     position: fixed;
-    top: 20px;
-    right: 25px;
+    top: 4%;
+    right: 5%;
     font-size: 28px;
     z-index: 2;
     transition: all 0.5s;
@@ -145,7 +145,12 @@ nav {
   }
 }
 
-
+@media screen and (max-width: 360px) {
+  .burger {
+    top: 3%;
+    right: 5%;
+  }
+}
 
  
 

@@ -11,15 +11,18 @@
 }
 
 .content{
+  min-height: 90vh;
   display: flex;
   justify-content: space-between;
 }
 
 .title-container{
-  margin-left: 30px;
-  margin-top: 50px;
   font-size: 20px;
-  font-family: "MADE Outer Sans Light"
+  font-family: "MADE Outer Sans Light";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1%;
 }
 
 .jobs-container{
