@@ -85,3 +85,12 @@
     width: 100%;
   }
 }
+
+@media (orientation: landscape) {
+  *{
+    overflow: auto;
+  }
+ .container {
+   height: 100%;
+ } 
+}

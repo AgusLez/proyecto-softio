@@ -68,3 +68,9 @@ br {
     display: flex;
   }
 }
+
+@media (orientation: landscape) {
+  .contact {
+    font-size: 20px;
+  }
+}

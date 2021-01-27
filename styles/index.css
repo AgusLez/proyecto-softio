@@ -52,6 +52,13 @@
   overflow: initial;
 }
 
+@media (orientation: landscape) {
+  .title-container {
+  font-size: 21vh;
+  line-height: 7vw;
+  }
+}
+
 @media (min-width: 576px){
   .container{ max-width: 100%;}
 }
