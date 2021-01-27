@@ -72,7 +72,7 @@
   }
 
   .social-links li {
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
 
   .col-lg-4 {
@@ -86,12 +86,12 @@
     writing-mode: horizontal-tb;
     font-size: 1.2vw;
     bottom: 0px;
-    right: 15px;
+    right: -50px;
   }
 
   .title-container {
-  font-size: 15vw;
-  line-height: 11vw;
+  font-size: 13vw;
+  line-height: 10vw;
   }
 
   .row-lg {

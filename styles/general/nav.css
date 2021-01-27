@@ -109,7 +109,7 @@ nav a {
   .burger {
     display: block;
     position: fixed;
-    top: 4%;
+    top: 3%;
     right: 5%;
     font-size: 28px;
     z-index: 2;
