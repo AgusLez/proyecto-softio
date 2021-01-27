@@ -1,0 +1,110 @@
+@import "./general/fonts.css";
+
+* {
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.content {
+  min-height: 90vh;
+}
+
+h1 {
+  font-size: 120px;
+  
+}
+
+.vertical-text-rl {
+  font-family: "MADE Outer Sans Light";
+  font-size: 12px;
+  letter-spacing: 1px;
+  writing-mode: vertical-rl;
+  margin: 20px 25px 0 0;
+}
+
+.title-container {
+  font-family: "MADE Outer Sans Bold";
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: 1%;
+}
+
+.description{
+  font-family: "MADE Outer Sans Light";
+  font-size: 25px;
+  padding-left: 90px;
+  margin-top: 15px;
+}
+
+.products-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.products-container ul {
+  font-family: "MADE Outer Sans Outline Bold";
+  font-size: 30px;
+  list-style-type: none;
+  position: relative;
+  right: 18%;
+}
+
+.products {
+  letter-spacing: 5px;
+}
+
+.vertical-text-lr {
+  font-family: "MADE Outer Sans Light";
+  font-size: 12px;
+  letter-spacing: 1px;
+  writing-mode: vertical-lr;
+  margin-left: 25px;
+  transform: rotate(180deg);
+}
+
+
+@media screen and (max-width: 768px) {
+ .content {
+   display: flex;
+   flex-direction: column;
+   width: 120%;
+   margin-top: 60px; 
+  }
+
+ h1 { 
+   font-size: 43px;
+ }
+
+ .vertical-text-rl {
+   display: none;
+ }
+
+ .vertical-text-lr {
+  display: none;
+}
+ .description {
+   font-size: 10px;
+   padding-left: 20px;
+   margin-top: 67px;
+ }
+
+ .products-container {
+   width: 0;
+ }
+
+ .products-container ul {
+  font-size: 12px;
+  list-style-type: none;
+  line-height: 40px;
+  padding-right: 24px;
+  padding-left: 20px;
+ }
+} 
+
+@media screen and (max-width: 1024px) {
+  .products-container {
+    width: 145%;
+  }
+}

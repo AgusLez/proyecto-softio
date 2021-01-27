@@ -2,13 +2,15 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
-  <link rel="stylesheet" href="./styles/index.css">
-  <link rel="stylesheet" href="./styles/general/themes.css">
-  <link rel="stylesheet" href="./styles/general/fade-in.css">
-  <link rel="stylesheet" href="./styles/general/mobile-nav.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
+  <link rel="stylesheet" href="./styles/index.css" />
+  <link rel="stylesheet" href="./styles/general/themes.css" />
+  <link rel="stylesheet" href="./styles/general/fade-in.css" />
+  <link rel="stylesheet" href="./styles/general/mobile-nav.css" />
   <title>Softio</title>
 </head>
 
@@ -21,29 +23,48 @@
       <li><a href="what-we-do.html">What we do</a></li>
       <li><a href="careers.html">Careers</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><button class="btn-toggle"><i class="fas fa-adjust"></i></button></li> 
+      <li>
+        <button class="btn-toggle"><i class="fas fa-adjust"></i></button>
+      </li>
     </ul>
 
-    <div class="burger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+    <div class="burger" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
   </nav>
 
-  <div class="content">
-    <h1 class="title-container fade-in">
-      <span class="title ">WE</span>
-      <span class="title">BUILD</span>
-      <span class="title">CODE</span>
-    </h1>
+  <div class="container">
+    <div class="col-12 col-lg-8">
+      <h1 class="title-container fade-in">
+        <span class="title">WE</span>
+        <span class="title">BUILD</span>
+        <span class="title">CODE</span>
+      </h1>
+    </div>
+    <div class="container row-lg">
+      <div class="col-12 col-lg-4">
+        <div class="contact-container">
+          <ul class="social-links">
+            <li>
+              <a alt="Instagram"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a alt="Twitter"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li><a alt="LinkedIn"></a><i class="fab fa-linkedin-in"></i></li>
+          </ul>
 
-    <div class="contact-container">
-      <ul class="social-links">
-        <li><a alt="Instagram"><i class="fab fa-instagram"></i></a></li>
-        <li><a alt="Twitter"><i class="fab fa-twitter"></i></a></li>
-        <li><a alt="LinkedIn"></a><i class="fab fa-linkedin-in"></i></li>
-      </ul>
-
-      <span class="address">AVENIDA DORREGO 1647, CABA, ARGENTINA / HI@SOFTIO.DEV</span>
+          <p class="address">AVENIDA DORREGO 1647, CABA, ARGENTINA / HI@SOFTIO.DEV</p>
+        </div>
+      </div>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+    crossorigin="anonymous"></script>
   <script type="text/javascript" src="./js/themes.js"></script>
   <script type="text/javascript" src="./js/mobile-nav.js"></script>
 </body>

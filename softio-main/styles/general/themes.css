@@ -1,0 +1,38 @@
+body {
+  --text-color: #eee;
+  --bkg-color: #000000;
+}
+body.light-theme {
+  --text-color: rgb(0, 0, 0);
+  --bkg-color: #fff;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    --text-color: rgb(0, 0, 0);
+    --bkg-color: #fff;
+  }
+  body.dark-theme {
+    --text-color: #eee;
+    --bkg-color: #000000;
+  }
+}
+
+* {
+  background-color: var(--bkg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.btn-toggle {
+  border: none;
+  display: flex;
+  align-items: flex-start;
+  outline: none;
+  margin-right: 25px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0;
+}
+
