@@ -22,10 +22,11 @@
 }
 
 .address {
-  font-size: 10px;
+  font-size: 9px;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   max-height: 45vh;
+  margin-right: 5vw;
 }
 
 .contact-container {
