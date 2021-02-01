@@ -88,7 +88,7 @@
 
 @media (orientation: landscape) {
   *{
-    overflow: auto;
+    overflow: hidden;
   }
  .container {
    height: 100%;

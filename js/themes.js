@@ -1,5 +1,8 @@
 const btn = document.querySelector(".btn-toggle");
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+const vh = window.innerHeight* 0.01;
+
+document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 const currentTheme = localStorage.getItem("theme");
 if (currentTheme == "dark") {
@@ -21,4 +24,9 @@ btn.addEventListener("click", function () {
       : "light";
   }
   localStorage.setItem("theme", theme);
+});
+
+window.addEventListener('resize', () => {
+  const vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
 });

@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   height: 90vh;
+  height: calc(var(--vh, 1vh) * 90);
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -22,13 +23,8 @@
 }
 
 .address {
-  font-size: 9px;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  max-height: 45vh;
-  margin-right: 5vw;
+  display: none;
 }
-
 .contact-container {
   display: flex;
   justify-content: flex-end;
@@ -88,12 +84,13 @@
   }
 
   .address {
+    display: inline;
     position: absolute;
     transform: rotate(0deg);
     writing-mode: horizontal-tb;
     font-size: 1.2vw;
     bottom: 0px;
-    right: -50px;
+    right: 2vw;
   }
 
   .title-container {
