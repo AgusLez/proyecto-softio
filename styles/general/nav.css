@@ -51,7 +51,7 @@ nav a {
   display: none;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1266px) {
   nav {
     justify-content: space-between;
     align-items: center;
@@ -160,7 +160,7 @@ nav a {
   }
 }
 
-@media screen and (max-width: 1366px) and (orientation: landscape) {
+@media screen and (max-width: 1266px) and (orientation: landscape) {
   .links a {
     font-size: 3vh;
     line-height: 10vh;
